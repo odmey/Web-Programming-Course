@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form.css">
+    <title>Join Form</title>
+</head>
+
+<body>
+    <div class="container-grid">
+
+        <div class="button-grid" id="back">
+            <a href="index.html">
+                <img src="img/left-arrow.png" alt="back">
+            </a>
+        </div>
+
+        <div class="form-grid" id="form">
+
+            <div class="form-card">
+
+                <div class="requirements">
+                    <h2>Fanclub Requirements</h2>
+                    <ul>
+                        <li>Must respect all BOYNEXTDOOR members.</li>
+                        <li>No hate speech or harmful behavior.</li>
+                        <li>Participate positively in the fan community.</li>
+                        <li>Provide valid personal information.</li>
+                    </ul>
+                </div>
+
+                <form method="POST" class="join-form">
+
+                    <div class="input-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="nama" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="passwprd" name="password">
+                    </div>
+
+                    <div class="gender-group">
+                        <label>Gender</label>
+
+                        <div class="gender-option">
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">Male</label>
+                        </div>
+
+                        <div class="gender-option">
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Female</label>
+                        </div>
+                    </div>
+
+                    <div class="bias-group">
+                        <label>Your Bias</label>
+
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="jaehyun" name="bias[]" value="jaehyun">
+                            <label for="jaehyun">Jaehyun</label>
+                        </div>
+
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="sungho" name="bias[]" value="sungho">
+                            <label for="sungho">Sungho</label>
+                        </div>
+
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="riwoo" name="bias[]" value="riwoo">
+                            <label for="riwoo">Riwoo</label>
+                        </div>
+
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="taesan" name="bias[]" value="taesan">
+                            <label for="taesan">Taesan</label>
+                        </div>
+
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="woonhak" name="bias[]" value="woonhak">
+                            <label for="woonhak">Woonhak</label>
+                        </div>
+
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="leehan" name="bias[]" value="leehan">
+                            <label for="leehan">Leehan</label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        Join Fanclub
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
